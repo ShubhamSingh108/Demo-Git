@@ -1,0 +1,11 @@
+Innovator inn = this.getInnovator();
+
+string thisUserID = inn.getUserID();
+
+Item userItem = this.newItem("User","get");
+
+userItem.setID(thisUserID);
+
+userItem.setAttribute("select","first_name,last_name,login_name");
+
+userItem = userItem.apply();
